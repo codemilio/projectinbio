@@ -10,7 +10,7 @@ export function Navbar() {
     <div className="flex flex-1 flex-row justify-between items-center text-xl">
       <Options />
       <Image priority src={Logo} alt="Project in Bio" />
-      <Button> Login </Button>
+      <Button className='px-8'> Login </Button>
     </div>
   )
 }

@@ -1,8 +1,14 @@
+import type { ComponentProps } from 'react'
+import { cn } from '@/utils/cn';
 
-export function Textarea() {
+type TextAreaProps = ComponentProps<'textarea'> & {
+  variant?: 'primary' | 'secondary' | 'ghost'
+}
+
+export function Textarea({ ...props }: TextAreaProps) {
   return (
-    <button type="button" className="px-4 py-2 text-white bg-blue-500 rounded-md" >
-      Button
-    </button>
+    <textarea 
+      className={cn("w-full p-3 to-background-secondary text-white placeholder:text-content-placeholder rounded-xl border border-transparent hover:border-border-secondary hover:text-content-body active:border-border-tertiary", props.className)} 
+    />
   );
 }
