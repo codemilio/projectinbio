@@ -1,6 +1,6 @@
 export function Hero() {
   return (
-    <div className="flex border">
+    <div className="flex">
       <div className="w-full flex flex-col gap-2 mt-[35vh]">
         <h1 className="text-5xl font-bold leading-[64px] text-content-heading">
           Seus projetos e redes sociais em um único link!

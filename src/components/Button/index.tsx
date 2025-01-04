@@ -1,8 +1,13 @@
+import type { ComponentProps, ReactNode } from 'react'
 
-export function Button() {
+type ButtonProps = ComponentProps<'button'> & {
+  children: ReactNode
+}
+
+export function Button({ children, ...props }: ButtonProps) {
   return (
-    <button type="button" className="px-4 py-2 text-white bg-blue-500 rounded-md" >
-      Button
+    <button type='button' className='py-4 px-16 bg-accent-purple rounded-md'>
+      { children }
     </button>
   );
 }
