@@ -7,7 +7,7 @@ import { UserCard } from "../UserCard";
 export function Hero() {
   return (
     <div className="flex h-screen">
-      <div className="w-full flex flex-col gap-2 mt-[30vh]">
+      <div className="w-full flex flex-col gap-2 mt-[40vh]">
         <h1 className="text-5xl font-bold leading-[64px] text-content-heading">
           Seus projetos e redes sociais em um único link!
         </h1>
