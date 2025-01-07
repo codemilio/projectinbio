@@ -9,9 +9,9 @@ export function Navbar() {
   return (
     <div className='absolute top-0 left-0 w-full px-4 py-8'>
       <div className="flex flex-row justify-between items-center text-xl">
-        {/* <Options /> */}
+        <Options />
         <Image priority src={Logo} alt="Project in Bio" />
-        <Button className='px-8'> Login </Button>
+        <Button className='px-20'> Login </Button>
       </div>
     </div>
   )
