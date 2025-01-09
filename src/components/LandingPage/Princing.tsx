@@ -10,23 +10,24 @@ export function Princing() {
         </span>
       </div>
 
-      <div className="flex gap-8">
-        <div className="flex flex-row">
-          <div className="flex flex-col justify-between size-80 border border-white border-opacity-10 rounded-xl p-8">
-            <div>
-              <h4 className="text-content-heading text-2xl font-bold"> Mensal </h4>
-              <span> Apenas </span>
-            </div>
-            <div className="flex items-center">
-              <span className="text-4xl text-content-heading font-bold"> R$ 00,00 </span>
-              <span className="text-xl">&nbsp;/mês</span>
-            </div>
-            <Button className="w-fit px-4"> Assinar </Button>
+      <div className="flex gap-8 items-end">
+        <div className="w-80 flex flex-col justify-between border border-white border-opacity-10 rounded-xl p-8 gap-y-8">
+          <div>
+            <h4 className="text-content-heading text-2xl font-bold"> Mensal </h4>
+            <span> Apenas </span>
           </div>
+          <div className="flex items-center">
+            <span className="text-4xl text-content-heading font-bold"> R$ 00,00 </span>
+            <span className="text-xl">&nbsp;/mês</span>
+          </div>
+          <Button className="w-fit px-4"> Assinar </Button>
         </div>
 
-        <div className="flex flex-row">
-          <div className="flex flex-col justify-between size-80 border border-white border-opacity-10 rounded-xl p-8">
+        <div className="w-80 rounded-2xl bg-[linear-gradient(90deg,#4B2DBB,#B54468_100%)] p-[2px]">
+          <div className="flex items-center justify-center h-12 font-bold text-xs uppercase">
+            Recomendado
+          </div>
+          <div className="flex flex-col w-full justify-between bg-background-secondary p-8 gap-y-8 rounded-b-2xl">
             <div>
               <h4 className="text-content-heading text-2xl font-bold"> Mensal </h4>
               <span> Apenas </span>
