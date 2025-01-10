@@ -10,7 +10,7 @@ export function Button({ children, variant = 'primary', ...props }: ButtonProps)
   return (
     <button 
       {...props} 
-      className={cn('rounded-xl p-3 text-white font-bold whitespace-nowrap hover:opacity-95 disabled:opacity-70',
+      className={cn('rounded-xl p-2 text-white font-bold whitespace-nowrap hover:opacity-95 disabled:opacity-70',
         variant === 'primary' && 'bg-accent-purple',
         variant === 'secondary' && 'bg-background-tertiary',
         variant === 'ghost' && 'border-border-primary',

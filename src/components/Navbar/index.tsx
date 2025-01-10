@@ -11,7 +11,7 @@ export function Navbar() {
       <div className="flex flex-row justify-between items-center text-xl">
         <Options />
         <Image priority src={Logo} alt="Project in Bio" />
-        <Button className='px-20'> Login </Button>
+        <Button className='px-16 py-2'> Login </Button>
       </div>
     </div>
   )

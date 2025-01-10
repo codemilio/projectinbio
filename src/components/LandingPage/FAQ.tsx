@@ -1,7 +1,7 @@
 
 export function FAQ(){
   return(
-    <div className="flex flex-col items-center space-y-16">
+    <div className="flex flex-col items-center space-y-8">
       <h2 className="text-3xl font-bold text-content-heading text-center"> Dúvidas frequentes </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 max-w-screen-md gap-4">
         <div className="rounded-xl border-border-primary border-[1px] p-4 space-y-2">

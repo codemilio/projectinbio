@@ -19,7 +19,7 @@ export default {
         "accent-purple": "#4B2DBB",
         "accent-blue": "#426782",
         "accent-green": "#59744B",
-        "accent-pink": "#6F4A5A",
+        "accent-pink": "#B5446B",
         "accent-yellow": "#8A7A3E",
         "accent-purple-dark": "#171031",
         "accent-blue-dark": "#2C404A",

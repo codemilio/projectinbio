@@ -2,11 +2,11 @@ import { Button } from "../Button";
 
 export function Princing() {
   return (
-    <div className="flex flex-col items-center gap-8">
+    <div className="flex flex-col items-center gap-16">
       <div className="flex flex-col items-center text-center gap-y-2 max-w-4xl">
         <h3 className="text-4xl font-bold text-white"> Um valor acessíve para todos </h3>
-        <span className="text-xl">
-          Junte-se à comunidade de criadores e profissionais que já estão elevando sua prsença online. Teste gratuitamente por <strong>7 dias</strong>, sem compromisso!
+        <span className="text-xl max-w-2xl">
+          Junte-se à comunidade de criadores e profissionais que já estão elevando sua prsença online. Teste gratuitamente por <strong className="text-accent-pink">7 dias</strong>, sem compromisso!
         </span>
       </div>
 
@@ -20,7 +20,7 @@ export function Princing() {
             <span className="text-4xl text-content-heading font-bold"> R$ 00,00 </span>
             <span className="text-xl">&nbsp;/mês</span>
           </div>
-          <Button className="w-fit px-4"> Assinar </Button>
+          <Button className="w-fit px-4 bg-background-tertiary"> Assinar </Button>
         </div>
 
         <div className="w-80 rounded-2xl bg-[linear-gradient(90deg,#4B2DBB,#B54468_100%)] p-[2px]">
@@ -41,7 +41,6 @@ export function Princing() {
           </div>
         </div>
       </div>
-
     </div>
   )
 }
