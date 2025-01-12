@@ -31,7 +31,6 @@ export function FAQ() {
 
   return (
     <div className="columns-1 sm:columns-2 gap-4 max-w-screen-md mx-auto">
-
       {items.map(({ title, description }) => (
         <div key={title} className="break-inside-avoid rounded-xl border-border-primary border-[1px] p-4 space-y-2 mb-4">
           <h3 className="text-xl font-bold text-content-heading"> {title} </h3>

@@ -2,7 +2,7 @@ import { Button } from "../Button";
 
 export function Princing() {
   return (
-    <div className="flex flex-col items-center gap-16">
+    <div className="flex flex-col items-center gap-16 mx-auto">
       <div className="flex flex-col items-center text-center gap-y-2 max-w-4xl">
         <h3 className="text-4xl font-bold text-white"> Um valor acessíve para todos </h3>
         <span className="text-xl max-w-2xl">
@@ -10,8 +10,8 @@ export function Princing() {
         </span>
       </div>
 
-      <div className="flex gap-8 items-end">
-        <div className="w-80 flex flex-col justify-between border border-white border-opacity-10 rounded-xl p-8 gap-y-8">
+      <div className="columns-1 w-full space-y-4 sm:columns-2">
+        <div className="flex flex-col justify-between border border-white border-opacity-10 rounded-xl p-8 gap-y-8 self-end">
           <div>
             <h4 className="text-content-heading text-2xl font-bold"> Mensal </h4>
             <span> Apenas </span>
@@ -23,7 +23,7 @@ export function Princing() {
           <Button className="w-fit px-4 bg-background-tertiary"> Assinar </Button>
         </div>
 
-        <div className="w-80 rounded-2xl bg-[linear-gradient(90deg,#4B2DBB,#B54468_100%)] p-[2px]">
+        <div className="break-inside-avoid w-full rounded-2xl bg-[linear-gradient(90deg,#4B2DBB,#B54468_100%)] p-[2px]">
           <div className="flex items-center justify-center h-12 font-bold text-xs uppercase">
             Recomendado
           </div>
