@@ -6,7 +6,7 @@ import { VideoExplain } from "./VideoExplain"
 
 export function LandingPage() {
   return (
-    <div className="flex flex-col gap-y-16">
+    <div className="flex flex-col gap-y-16 ">
       {/* <Hero/> */}
       <Header />
       <VideoExplain />
