@@ -6,7 +6,7 @@ export function UserCard() {
     Github,
     Facebook,
     Instagram,
-    // Twitter,
+    Twitter,
     Linkedin,
     Plus,
   ]
