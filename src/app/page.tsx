@@ -8,7 +8,6 @@ export default function Home() {
       <div className="w-full h-full bg-custom-dotted-lines bg-dotted-lines bg-no-repeat bg-black"/>
       </div>
       <Navbar />
-
       <LandingPage />
     </div>
   );

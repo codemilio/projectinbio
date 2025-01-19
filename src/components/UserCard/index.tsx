@@ -12,7 +12,7 @@ export function UserCard() {
   ]
 
   return (
-    <div className="w-[348px] flex flex-col items-center gap-5 p-5 border border-white border-opacity-10 bg-[#121212] rounded-3xl text-white">
+    <div className="w-full flex flex-col items-center gap-5 p-5 border border-white border-opacity-10 bg-[#121212] rounded-3xl text-white">
       <div className="size-48">
         <img
           alt=""
