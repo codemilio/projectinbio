@@ -1,9 +1,18 @@
 import Image from 'next/image'
 
-import { Options } from "./options"
-import { Button } from '../Button'
+import { Button } from '../ui/button'
 
 import Logo from '../../assets/app-logo.svg'
+
+export function Options() {
+  return (
+      <ul className="flex flex-row space-x-8 text-content-heading ">
+        <li className="font-bold"> Início </li>
+        <li className="text-content-headline"> Preço </li>
+        <li className="text-content-headline"> FAQ </li>
+      </ul>
+  )
+}
 
 export function Navbar() {
   return (

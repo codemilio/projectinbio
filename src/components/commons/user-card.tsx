@@ -1,5 +1,5 @@
 import { Facebook, Instagram, Twitter, Plus, Github, Linkedin } from "lucide-react"
-import { Button } from "../Button"
+import { Button } from "../ui/button"
 
 export function UserCard() {
   const icons = [
@@ -45,12 +45,13 @@ export function UserCard() {
           }
         </div>
       </div>
-      <div className="flex flex-col gap-3 w-full h-[172px]">
-        <div className="w-full flex flex-col items-center gap-3">
+      <div className="flex flex-col gap-3 w-full">
+        <div className="w-full flex flex-col items-center gap-4">
           <Button className="w-full"> Template SaaS - Compre agora </Button>
-          <button type="button" className="p-3 rounded-xl bg-[#1E1E1E] hover:bg-[#2E2E2E]">
+          <Button className="w-full flex bg-[#1E1E1E] hover:bg-[#2E2E2E] justify-center gap-x-4 uppercase text-content-headline">
             <Plus />
-          </button>
+            Adicionar link personalizado 
+          </Button>
         </div>
       </div>
     </div>
