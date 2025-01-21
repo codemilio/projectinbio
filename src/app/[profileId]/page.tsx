@@ -1,6 +1,6 @@
-import { ProjectCard } from "@/components/ProjectCard"
-import { TotalVists } from "@/components/TotalVisits"
-import { UserCard } from "@/components/UserCard"
+import { ProjectCard } from "@/components/commons/project-card"
+import { TotalVists } from "@/components/commons/total-visits"
+import { UserCard } from "@/components/commons/user-card"
 
 type ProfilePageParams = {
   profileId: string
@@ -10,18 +10,26 @@ type ProfilePageProps = {
   params: Promise<ProfilePageParams>
 }
 
-export default async function ProfilePage({ params }: ProfilePageProps) {
+export default function ProfilePage({ params }: ProfilePageProps) {
   return (
-    <div className="flex relative h-screen p-20 overflow-hidden">
-      <div className="w-1/2 flex flex-col justify-center h-min gap-y-4">
+    <div className="flex relative h-screen overflow-hidden gap-4 py-4">
+      <div className="w-1/2 flex flex-col justify-center h-min gap-y-4 ">
         <UserCard />
-        <TotalVists  />
+        <TotalVists />
       </div>
-      <div className="flex flex-wrap content-start w-full justify-center gap-4 ">
-        <ProjectCard/>
-        <ProjectCard/>
-        <ProjectCard/>
-        <ProjectCard/>
+      <div className="columns-1 sm:columns-2 gap-4 max-w-screen-md ">
+        <div className="break-inside-avoid mb-4">
+          <ProjectCard />
+        </div>
+        <div className="break-inside-avoid mb-4">
+          <ProjectCard />
+        </div>
+        <div className="break-inside-avoid mb-4">
+          <ProjectCard />
+        </div>
+        <div className="break-inside-avoid mb-4">
+          <ProjectCard />
+        </div>
       </div>
     </div>
   )

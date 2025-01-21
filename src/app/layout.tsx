@@ -1,7 +1,7 @@
 
 import { Red_Hat_Display } from 'next/font/google'
 import "./globals.css";
-import { Navbar } from '@/components/Navbar';
+import { Navbar } from '@/components/commons/navbar';
 
 const redHadDisplay = Red_Hat_Display({
   subsets: ['latin'],
