@@ -16,10 +16,13 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body
-        className={`${redHadDisplay.className} text-content-body bg-background-primary antialiased max-w-7xl mx-auto relative`}
+        className={`${redHadDisplay.className} text-content-body bg-background-primary antialiased relative`}
       >
-        <Navbar />
-        {children}
+        <div id='dialog-root' />
+        <div className='max-w-7xl mx-auto'>
+          {/* <Navbar /> */}
+          {children}
+        </div>
       </body>
     </html>
   );

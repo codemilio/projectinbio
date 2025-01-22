@@ -12,7 +12,7 @@ type ProfilePageProps = {
 
 export default function ProfilePage({ params }: ProfilePageProps) {
   return (
-    <div className="flex relative h-screen overflow-hidden gap-4 py-4">
+    <div className="flex h-screen overflow-hidden gap-4">
       <div className="w-1/2 flex flex-col justify-center h-min gap-y-4 ">
         <UserCard />
         <TotalVists />
