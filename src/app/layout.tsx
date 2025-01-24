@@ -2,6 +2,7 @@
 import { Red_Hat_Display } from 'next/font/google'
 import "./globals.css";
 import { Navbar } from '@/components/commons/navbar';
+import { Dialog } from '@/components/commons/dialog';
 
 const redHadDisplay = Red_Hat_Display({
   subsets: ['latin'],
@@ -18,10 +19,11 @@ export default function RootLayout({
       <body
         className={`${redHadDisplay.className} text-content-body bg-background-primary antialiased relative`}
       >
-        <div id='dialog-root' />
         <div className='max-w-7xl mx-auto'>
-          {/* <Navbar /> */}
-          {children}
+          <Dialog.Provider>
+            {/* <Navbar /> */}
+            {children}
+          </Dialog.Provider>
         </div>
       </body>
     </html>
